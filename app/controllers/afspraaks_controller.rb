@@ -3,10 +3,11 @@ class AfspraaksController < ApplicationController
   # GET /afspraaks.json
   def index
     @afspraaks = Afspraak.all
-
+    @users = User.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @afspraaks }
+	  format.json { render json: @users }
     end
   end
 

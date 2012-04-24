@@ -1,0 +1,10 @@
+html, body{margin: 40px 0 0 0; padding: 0px; font-size: 11px; text-align:left;}
+
+h1{font-size: 16px;}
+
+.box1{display: block; float:left; background: #ededed; padding:20px; margin: 0px 10px; width:450px;}
+.uppermenu{display: inline-block; position: fixed; top: 0px; height: 40px; width: 100%; background-color: purple; left:0px;}
+.uppermenu ul{padding: 0px; width:1024px; margin: 0 auto;}
+.uppermenu ul li{list-style:none; float:left; padding: 12px 20px;}
+.uppermenu ul li a{text-decoration:none; color: white; font-weight: bold;}
+.container{padding: 0px; width:1024px; margin: 0 auto;}
