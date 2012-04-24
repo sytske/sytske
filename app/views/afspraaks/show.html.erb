@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Naam:</b>
+  <%= @afspraak.naam %>
+</p>
+
+<p>
+  <b>Datum:</b>
+  <%= @afspraak.datum %>
+</p>
+
+<p>
+  <b>Behandeling:</b>
+  <%= @afspraak.behandeling %>
+</p>
+
+<p>
+  <b>Medewerker:</b>
+  <%= @afspraak.medewerker %>
+</p>
+
+
+<%= link_to 'Edit', edit_afspraak_path(@afspraak) %> |
+<%= link_to 'Back', afspraaks_path %>

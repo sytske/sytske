@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  naam: MyString
+  datum: MyString
+  behandeling: MyString
+  medewerker: MyString
+
+two:
+  naam: MyString
+  datum: MyString
+  behandeling: MyString
+  medewerker: MyString

@@ -1,0 +1,33 @@
+<%= form_for(@afspraak) do |f| %>
+  <% if @afspraak.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@afspraak.errors.count, "error") %> prohibited this afspraak from being saved:</h2>
+
+      <ul>
+      <% @afspraak.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :naam %><br />
+    <%= f.text_field :naam %>
+  </div>
+  <div class="field">
+    <%= f.label :datum %><br />
+    <%= f.text_field :datum %>
+  </div>
+  <div class="field">
+    <%= f.label :behandeling %><br />
+    <%= f.text_field :behandeling %>
+  </div>
+  <div class="field">
+    <%= f.label :medewerker %><br />
+    <%= f.text_field :medewerker %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<h1>Listing kappers</h1>
+
+<table>
+  <tr>
+    <th>Voornaam</th>
+    <th>Achternaam</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kappers.each do |kapper| %>
+  <tr>
+    <td><%= kapper.voornaam %></td>
+    <td><%= kapper.achternaam %></td>
+    <td><%= link_to 'Show', kapper %></td>
+    <td><%= link_to 'Edit', edit_kapper_path(kapper) %></td>
+    <td><%= link_to 'Destroy', kapper, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Kapper', new_kapper_path %>

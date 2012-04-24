@@ -1,0 +1,2 @@
+module AfspraaksHelper
+end

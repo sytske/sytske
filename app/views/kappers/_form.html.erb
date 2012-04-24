@@ -1,0 +1,25 @@
+<%= form_for(@kapper) do |f| %>
+  <% if @kapper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kapper.errors.count, "error") %> prohibited this kapper from being saved:</h2>
+
+      <ul>
+      <% @kapper.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :voornaam %><br />
+    <%= f.text_field :voornaam %>
+  </div>
+  <div class="field">
+    <%= f.label :achternaam %><br />
+    <%= f.text_field :achternaam %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

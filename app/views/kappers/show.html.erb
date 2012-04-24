@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Voornaam:</b>
+  <%= @kapper.voornaam %>
+</p>
+
+<p>
+  <b>Achternaam:</b>
+  <%= @kapper.achternaam %>
+</p>
+
+
+<%= link_to 'Edit', edit_kapper_path(@kapper) %> |
+<%= link_to 'Back', kappers_path %>

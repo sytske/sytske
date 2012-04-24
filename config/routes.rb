@@ -1,4 +1,10 @@
 Sytske::Application.routes.draw do
+  resources :medewerkers
+
+  resources :kappers
+
+  resources :afspraaks
+
   resources :users
 
   # The priority is based upon order of creation:

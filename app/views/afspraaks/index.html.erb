@@ -1,0 +1,29 @@
+<h1>Listing afspraaks</h1>
+
+<table>
+  <tr>
+    <th>Naam</th>
+    <th>Datum</th>
+    <th>Behandeling</th>
+    <th>Medewerker</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @afspraaks.each do |afspraak| %>
+  <tr>
+    <td><%= afspraak.naam %></td>
+    <td><%= afspraak.datum %></td>
+    <td><%= afspraak.behandeling %></td>
+    <td><%= afspraak.medewerker %></td>
+    <td><%= link_to 'Show', afspraak %></td>
+    <td><%= link_to 'Edit', edit_afspraak_path(afspraak) %></td>
+    <td><%= link_to 'Destroy', afspraak, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Afspraak', new_afspraak_path %>
